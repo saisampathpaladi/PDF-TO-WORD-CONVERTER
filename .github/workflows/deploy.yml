@@ -17,12 +17,12 @@ jobs:
       run: docker build -t my-pdf-converter .
 
     - name: Run Docker container
-      run: docker run -d -p 80:80 --name file-converter my-pdf-converter .
+      run: docker run -d -p 80:80 --name file-converter my-pdf-converter
 
     - name: Copy files to public directory
       run: |
         mkdir public
-        docker cp file-converter:/usr/share/nginx/html public/
+        docker cp file-converter:/usr/share/nginx/html/. public/
 
     - name: Stop and remove Docker container
       run: docker rm -f file-converter
