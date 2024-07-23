@@ -25,10 +25,11 @@ jobs:
         docker cp file-converter:/usr/share/nginx/html public/
 
     - name: Stop and remove Docker container
-      run: docker rm -f my-pdf-converter
+      run: docker rm -f file-converter
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./public
+        publish_branch: gh-pages
