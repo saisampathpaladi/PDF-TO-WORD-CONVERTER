@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="attribution">
+            <span>Made by Sampath Sai Paladi</span>
+            <a href="https://www.linkedin.com/in/sampath-sai-paladi" target="_blank" class="social-button">LinkedIn</a>
+            <a href="mailto:saisampathpaladi@gmail.com" class="social-button">Email</a>
+            <a href="https://github.com/saisampathpaladi" target="_blank" class="social-button">GitHub</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>File Converter PDF to WORD / word to any</h1>
+        <div class="upload-section">
+            <input type="file" id="fileInput" multiple>
+        </div>
+        <div id="conversionOptions" class="hidden">
+            <h2>Conversion Options</h2>
+            <div id="pdfToWordOptions" class="option hidden">
+                <button id="convertPdfToWord">Convert PDF to Word</button>
+            </div>
+            <div id="wordToPdfOptions" class="option hidden">
+                <button id="convertWordToPdf">Convert Word to PDF</button>
+            </div>
+            <div id="changeExtensionOptions" class="option hidden">
+                <label for="newExtension">New Extension:</label>
+                <input type="text" id="newExtension">
+                <button id="changeExtension">Change Extension</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+</body>
+</html>
