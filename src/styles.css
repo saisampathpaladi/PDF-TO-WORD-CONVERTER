@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.attribution {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #48c6ef;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+    background: #6f86d6;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+input[type="file"]:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.option {
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #48c6ef;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #6f86d6;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
