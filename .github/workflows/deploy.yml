@@ -25,7 +25,7 @@ jobs:
         docker cp file-converter:/usr/share/nginx/html public/
 
     - name: Stop and remove Docker container
-      run: docker rm -f file-converter
+      run: docker rm -f my-pdf-converter
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
